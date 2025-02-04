@@ -1,0 +1,12 @@
+.env
+.env.key
+.env_key.json
+.env_key.backup.json
+.env.backup
+cookies.txt
+encryption.js
+data.json
+file.html
+init-cookies.txt
+mail.html
+mail.js
