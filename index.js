@@ -269,7 +269,7 @@ try {
     const { interval, key_file } = GetArguments(process.argv);
     const config = fsSync.readFileSync(key_file);
     const { SECRET_KEY, ALGORITHM, IV_LENGTH } = JSON.parse(config.toString('utf-8'));
-    // fsSync.unlinkSync(key_file);
+    fsSync.unlinkSync(key_file);
     const env = GetEnv(SECRET_KEY, ALGORITHM);
 
     if (interval === 0) {
